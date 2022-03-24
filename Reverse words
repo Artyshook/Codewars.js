@@ -1,0 +1,11 @@
+function reverseWords(str) {
+  str = str.split(" ");
+  
+  var res = [];
+  
+  for (var i = 0; i < str.length; i++){
+      res.push (str[i].split("").reverse().join(""));  
+  }  
+  
+  return res.join(" ");
+}
